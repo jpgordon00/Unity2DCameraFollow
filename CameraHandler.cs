@@ -88,12 +88,6 @@ using UnityEngine;
             }
         }
 
-        /*
-            Only true if the camera is no longer following because of a pause
-            ( is expected to re-follow )
-        */
-        public bool PauseFollowing = false;
-
         public void FixedUpdate()
         {
             if (Following && (TargetObject != null || (TargetPos.x != -1 && TargetPos.y != -1)))
